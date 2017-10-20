@@ -3,7 +3,7 @@
 
 Front End of a recipe website.
 
-Fav, rate, navigate. State persisted with Local Storage.
+Fav, rate, navigate. State persisted with Local Storage. node server backend
 
 simple user validation.
 
