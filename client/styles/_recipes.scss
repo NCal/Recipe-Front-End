@@ -1,0 +1,81 @@
+@import 'recipe_mixins';
+
+// RECIPES
+.recipes {
+    width: 95%;
+    margin: 0 auto;
+
+    h1 {
+        position: relative;
+        text-align: left;
+        left: 55px;
+        width: 100px;
+    }
+
+    .recipe-image {
+        width: 370px;
+        height: 208px;
+        transition: 0.5s;
+    }
+
+    .recipe-image:hover {
+        filter: brightness(110%);
+        transition: 0.5s;
+    }
+
+    .recipe-tile {
+        display: inline-block;
+        margin: 0px;
+        width: 370px;
+        height: 319px;
+        background-color: #fff;
+        margin: 0 15px 40px 15px;
+        cursor: pointer;
+        box-sizing: border-box;
+        @include box-shadow(0px, 2px, 5px, -1px, rgba(204, 204, 204, 1))
+    }
+
+    .recipe-caption {
+        width: 370px;
+        height: 108px;
+        text-align: left;
+        background-color: #fff;
+    }
+
+    .recipe-copy {
+        margin-left: 10px;
+    }
+
+    .top-copy {
+        position: relative;
+        top: 10px;
+        line-height: 25pt;
+    }
+
+    .recipe-name {
+        font-weight: bold;
+    }
+
+    .recipe-headline {
+        font-size: 10pt;
+    }
+
+    .bottom-copy {
+        position: relative;
+        top: 15px;
+
+        .recipe-cals,
+        .recipe-time {
+            color: #aaa;
+            display: inline;
+            font-size: 10pt;
+            font-weight: lighter;
+        }
+
+        .fav-button {
+            position: absolute;
+            bottom: 0;
+            right: 10px;
+        }
+    }
+}

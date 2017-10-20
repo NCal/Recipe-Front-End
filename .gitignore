@@ -1,0 +1,4 @@
+node_modules
+private.txt
+client/bundle.js
+.DS_Store

@@ -1,0 +1,133 @@
+// MQs
+@media only screen and (max-width: 1257px) {
+    .single-recipe-container {
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1128px) {
+    .login-form-container {
+        .login-inputs {
+            top: 10px;
+        }
+        .food-basket {
+            width: 220px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    // singleView
+    .single-recipe-container {
+
+        .single-recipe {
+            overflow: scroll;
+            overflow-x: hidden;
+
+            .single-recipe-description {
+                margin: 0;
+            }
+            ul,
+            .single-recipe-description,
+            .single-recipe-headline {
+                font-size: 10pt;
+            }
+            ul {
+                width: 300px;
+                float: none;
+                display: inline-block;
+            }
+        }
+        .single-recipe-header {
+            .single-recipe-title {
+                font-size: 1em;
+            }
+            .single-recipe-headline,
+            .single-view-rating,
+            .single-recipe-time,
+            .single-recipe-cals {
+                margin: 0;
+                font-size: 10pt;
+            }
+        }
+
+        img {
+            width: 290px;
+            display: block;
+            margin: 10px auto;
+            float: none;
+        }
+
+        .single-recipe-description {
+            border-right: 0px;
+            width: auto;
+            float: none;
+            padding: 0;
+            margin-top: 20px;
+            max-width: 300px;
+            margin: 0 auto !important;
+            display: block;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .single-recipe-container {
+        .single-recipe {
+            width: 80%;
+        }
+    }
+
+    @media only screen and (min-width: 700px) {
+
+        ul,
+        .single-recipe-description {
+            font-size: 11pt;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .single-recipe-container {
+        .fav-button {
+            top: 80px;
+        }
+    }
+}
+
+@media only screen and (max-width: 424px) {
+    //recipeTile
+    .recipes {
+        .recipe-tile {
+            width: 295px;
+
+            img {
+                width: auto;
+            }
+        }
+
+        .recipe-caption {
+            width: 295px;
+
+            .bottom-copy {
+                .fav-button {
+                    right: 8px;
+                    top: 0;
+
+                    svg {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    } // singleView
+    .single-recipe-container {
+        ul {
+            margin: 20px 20px;
+        }
+
+        .fav-button {
+            top: 80px;
+        }
+    }
+}

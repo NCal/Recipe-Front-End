@@ -1,0 +1,87 @@
+// IMPORTS
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600');
+
+// VARS
+$bg-color: #fdfcfa;
+
+// GLOBAL
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    background-color: $bg-color;
+    color: #000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+label {
+    display: block;
+}
+
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #ccc;
+    border-radius: 10px;
+    background-color: #ccc;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #f7f7f7;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px #f7f7f7;
+    background-color: #555;
+}
+
+
+// MODAL BG
+.modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    z-index: 100;
+    display: none;
+}
+
+// BODY CONTAINER
+.body-container {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: $bg-color;
+    margin: 0;
+}
+
+.fav-button {
+    svg {
+        width: 28.8px;
+    }
+}
+
+// PARTIALS
+@import 'header';
+@import 'login';
+@import 'recipes';
+@import 'single_view';
+@import 'media_queries';

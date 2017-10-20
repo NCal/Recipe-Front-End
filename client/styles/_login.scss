@@ -1,0 +1,82 @@
+// VARS
+$hf-green: #91c11e;
+
+// MIXINS
+@mixin placeholder($color){
+    ::-webkit-input-placeholder {color: $color;}
+    ::-moz-placeholder {color: $color;}
+    :-ms-input-placeholder {color: $color;}
+    :-moz-placeholder {color: $color;}
+}
+
+// LOGIN
+.login-form-container {
+    color: #3a3a3a;
+    margin: 0 auto;
+    width: 50%;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+
+    .food-basket {
+        width: 350px;
+        pointer-events: none;
+    }
+
+    fieldset {
+        background-color: #fff;
+        border: 1px solid #ccc;
+    }
+
+    .login-inputs {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        top: 50px;
+
+        .login-button {
+            border-radius: 3px;
+            height: 40px;
+            width: 170px;
+            border: solid 1px $hf-green;
+            background-color: $hf-green;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .login-button:target {
+            background-color: #709517;
+        }
+
+        .email-input,
+        .password-input {
+            border: solid 1px #eceae6;
+            border-radius: 3px;
+            height: 20px;
+            color: #555;
+            display: block;
+            margin-bottom: 20px;
+            width: 170px;
+            padding: 15px;
+        }
+        @include placeholder(#999);
+    }
+
+    form fieldset legend {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+
+    .columns {
+        margin: 0 auto;
+    }
+
+    .email-msg {
+        font-size: 2em;
+    }
+
+    .forgot-success {
+        display: none;
+        font-size: 2em;
+    }
+}
